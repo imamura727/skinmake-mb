@@ -1,174 +1,7 @@
 <?php
-  $year = date('Y');
+require_once('head.php');
 ?>
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MULTI BALM - スキンメイク マルチバーム</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-
-
-
-
-<!-- wow.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-<!-- style -->
-<style>
-  body {
-    color: #2B2B2B;
-    letter-spacing: 0.12em;
-    /* 行間 */
-    line-height: 2;
-    text-align: justify;
-  }
-
-  .bg-beige{
-    background-color: #efeaea;
-  }
-  .fv {
-    padding-top: clamp(1rem, -2.273rem + 16.36vw, 10rem);
-    display: flex;
-    align-items: center; /* 垂直方向の中央揃え */
-    justify-content: center; /* 水平方向の中央揃え */
-    height: 100vh; /* ビューポートの高さを基準に */
-    background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 10%,rgba(239, 234, 234, 1) 10%);
-    @media (max-width: 576px) {
-      background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 20%,rgba(239, 234, 234, 1) 20%);
-      height: 80vh;
-    }
-  }
-  .fv-logo {
-    width: 100%;
-    height: auto;
-    max-width: 320px;
-    @media (max-width: 576px) {
-      width: 170px !important;
-    }
-  }
-  .fv-logo-wrapper{
-    display: flex;
-    align-items: center; /* 垂直方向の中央揃え */
-    justify-content: center; /* 水平方向の中央揃え */
-    font-size: 3.5rem;
-    line-height: 4rem;
-  }
-  .fv-img {
-    width: 100%;
-    height: auto;
-    max-width: 400px;
-    /* メディアスクリーン */
-    @media (max-width: 576px) {
-      width: 300px !important;
-    }
-  }
-  .fv-img-wrapper{
-    display: flex;
-    align-items: center; /* 垂直方向の中央揃え */
-    justify-content: center; /* 水平方向の中央揃え */
-    overflow: hidden;
-  }
-  .img-vitamin{
-    width: 100%;
-    height: auto;
-    max-width: 500px;
-  }
-
-  .additive-free{
-    font-size: 1.5rem;
-    aspect-ratio: 1 / 1; /* 縦横比を1:1に設定 */
-    width: calc(100% / 4);
-    /* 背景に線だけの丸 */
-    border-radius: 50%;
-    border: 2px solid #BFBFBF;
-    margin: 2rem;
-    position: relative;
-    overflow: hidden;
-    @media (max-width: 576px) {
-      width: calc(100% / 2.8);
-    }
-
-    /* 斜め線を1本引く */
-    ::before {
-      z-index: 0;
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(-45deg, transparent 49%, #BFBFBF 50%, transparent 50%);
-    }
-  }
-  .additive-num{
-    font-size: 5.5rem;
-    line-height: 1.2;
-  }
-  .how-to-title {
-    position: relative;
-  }
-  .how-to-title:after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 60px;
-      height: 2px;
-      background-color: #555555FF;
-      top: 100%; /* 親要素の下に配置 */
-      left: 50%; /* 親要素の中央に配置 */
-      transform: translateX(-50%); /* 中央揃え */
-      margin-top: 1.5rem; /* 上下の間隔を調整 */
-    }
-  .footer-logo {
-    width: 100%;
-    height: auto;
-    max-width: 250px;
-  }
-  .footer-link{
-    color: #888888FF;
-    text-decoration: none;
-    transition: .2s;
-    /* ホバー効果 */
-    &:hover {
-      color: #BFBFBF;
-    }
-  }
-
-  /* アニメーション */
-  /* ブラー＆フェードアップ */
-@keyframes blurFadeUp {
-  0% {
-    opacity: 0;
-    filter: blur(50px);
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateY(0);
-  }
-}
-.blurFadeUp {
-  animation: blurFadeUp 0.5s ease-out;
-}
-
-/* フェードアップ */
-@keyframes fadeUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.fadeUp {
-  animation: fadeUp 0.5s ease-out;
-}
-
-</style>
 </head>
 <body>
   <div class="fv">
@@ -178,16 +11,14 @@
           <div class="fv-logo-wrapper">
             <div>
               <img src="./images/skinmake_logo.svg" alt="" class="fv-logo mb-5">
-              <div class="fw-semibold pb-5">
+              <div class="fw-semibold pb-5 wow blur">
                 MULTI BALM
               </div>
             </div>
           </div>
         </div>
         <div class="col p-lg-5 p-0 d-flex align-items-md-end align-items-center justify-content-start justify-content-md-end fv-img-wrapper">
-
-            <img src="./images/multi_balm_fv.webp" alt="" class="fv-img wow blurFadeUp" width="400" height="768">
-
+            <img src="./images/multi_balm_fv3.webp" alt="" class="fv-img" width="400" height="768">
         </div>
       </div>
     </div>
@@ -198,7 +29,7 @@
       <div class="mb-3 fw-semibold fs-2 pt-md-5">
         スキンメイクマルチバーム
       </div>
-      <div class="mb-5 fw-semibold fs-1">
+      <div class="mb-5 fw-semibold fs-1 wow blur">
         上質な潤いを纏い、<br class="d-block d-md-none">美しさの持続を高める
       </div>
       <div>
@@ -215,10 +46,10 @@
 
         <div class="col px-5 order-0 pb-5">
           <div class="p-md-5 px-5 m-xl-5 text-end">
-            <img src="./images/argane.webp" alt="" class="img-fluid img-vitamin wow blurFadeUp" width="500" height="509">
+            <img src="./images/argane.webp" alt="" class="img-fluid img-vitamin wow blur" width="500" height="509">
           </div>
         </div>
-        <div class="col px-5 d-flex align-items-center justify-content-start order-1">
+        <div class="col wow fadeUp px-md-5 px-3 d-flex align-items-center justify-content-start order-1">
           <div class="pb-5">
             <h3 class="fs-2 fw-semibold mb-md-5 mb-3">
               アルガンオイル<br>（アルガニアスピノサ核油）
@@ -229,7 +60,7 @@
           </div>
         </div>
 
-        <div class="col order-3 order-md-2 px-5 d-flex align-items-center justify-content-end">
+        <div class="col wow fadeUp order-3 order-md-2 px-md-5 px-3 d-flex align-items-center justify-content-end">
           <div class="pb-5">
             <h3 class="fs-2 fw-semibold mb-md-5 mb-3">
               ビタミンE<br>（トフェコロール）
@@ -241,16 +72,16 @@
         </div>
         <div class="col order-2 order-md-3 px-0 pb-5">
           <div class="text-end">
-            <img src="./images/vitamin_e.webp" alt="" class="img-fluid" width="1260" height="949">
+            <img src="./images/vitamin_e.webp" alt="" class="img-fluid wow blur" width="1260" height="949">
           </div>
         </div>
 
         <div class="col order-4 px-5 mb-5 pb-5">
           <div class="p-md-5 px-5 m-xl-5 text-end">
-            <img src="./images/vitamin_a.webp" alt="" class="img-fluid img-vitamin" width="500" height="502">
+            <img src="./images/vitamin_a.webp" alt="" class="img-fluid img-vitamin wow blur" width="500" height="502">
           </div>
         </div>
-        <div class="col order-5 px-5 d-flex align-items-center justify-content-start">
+        <div class="col wow fadeUp order-5 px-md-5 px-3 d-flex align-items-center justify-content-start">
           <div class="pb-5">
             <h3 class="fs-2 fw-semibold mb-md-5 mb-3">
               ビタミンA<br>（パルミチン酸レチノール）
@@ -266,36 +97,36 @@
   </section>
 
   <section class="bg-beige">
-    <div class="container py-5 text-center fw-bold">
+    <div class="container py-md-5 text-center fw-bold">
       <div class="d-lg-flex py-5 my-lg-5">
         <div class="flex-grow-1">
           <div class="row row-cols-3">
-            <div class="col additive-free d-flex align-items-center justify-content-center">
+            <div class="col additive-free d-flex align-items-center justify-content-center wow fadeUp" style="animation-delay: 0s;">
               <div class="">
                 パラベン
               </div>
             </div>
-            <div class="col additive-free d-flex align-items-center justify-content-center">
+            <div class="col additive-free d-flex align-items-center justify-content-center wow fadeUp" style="animation-delay: 0.2s;">
               <div class="">
                 石油系<br>界面活性剤
               </div>
             </div>
-            <div class="col additive-free d-flex align-items-center justify-content-center">
+            <div class="col additive-free d-flex align-items-center justify-content-center wow fadeUp" style="animation-delay: 0.4s;">
               <div class="">
                 着色料
               </div>
             </div>
-              <div class="col additive-free d-flex align-items-center justify-content-center">
+              <div class="col additive-free d-flex align-items-center justify-content-center wow fadeUp" style="animation-delay: 0.6s;">
               <div class="">
                 合成香料
               </div>
             </div>
-            <div class="col additive-free d-flex align-items-center justify-content-center">
+            <div class="col additive-free d-flex align-items-center justify-content-center wow fadeUp" style="animation-delay: 0.8s;">
               <div class="">
                 エタノール
               </div>
             </div>
-            <div class="col additive-free d-flex align-items-center justify-content-center">
+            <div class="col additive-free d-flex align-items-center justify-content-center wow fadeUp" style="animation-delay: 1s;">
               <div class="">
                 シリコーン
               </div>
@@ -325,13 +156,13 @@
         <div class="col order-1 order-md-0 d-flex align-items-center justify-content-center">
           <div>
             <h3 class="fw-bold fs-1 mb-5">心地よいテクスチャ</h3>
-            <h4 class="fw-bold mb-3">伸び◯</h4>
-            <h4 class="fw-bold mb-3">肌馴染◯</h4>
-            <h4 class="fw-bold mb-3">ベタつきなし◯</h4>
+            <h4 class="h2 fw-bold mb-3 wow fadeUp" style="animation-delay:0s">伸び◯</h4>
+            <h4 class="h2 fw-bold mb-3 wow fadeUp" style="animation-delay:0.2s">肌馴染◯</h4>
+            <h4 class="h2 fw-bold mb-3 wow fadeUp" style="animation-delay:0.4s">ベタつきなし◯</h4>
           </div>
         </div>
         <div class="col order-0 order-md-1 px-lg-5 mb-5">
-          <img src="./images/texture.webp" alt="" class="img-fluid" width="600" height="330">
+          <img src="./images/texture.webp" alt="" class="img-fluid wow blur" width="600" height="330">
         </div>
       </div>
     </div>
@@ -345,46 +176,46 @@
         施術直後からご使用いただけます。
       </div>
       <div class="row row-cols-md-3 row-cols-1 mb-5">
-        <div class="col">
+        <div class="col wow fadeUp" style="animation-delay:0s;">
           <div class="px-2 mb-4">
-            <div class="px-5">
+            <div class="px-5 px-md-0 px-lg-5 mx-5 mx-md-0">
               <img src="./images/how_to_use_01.webp" alt="" class="img-fluid" width="400" height="320">
             </div>
             <div class="fw-bold">CASE 1</div>
             <h4 class="fw-bold">施術後の保湿に</h4>
             <div class="px-2">
-              眉の施術後1週間継続してご使用ください。乾燥を避け、１日２回を目安に塗布します。
+              眉の施術後1週間継続してご使用ください。<br class="d-block d-md-none">乾燥を避け、１日２回を目安に塗布します。
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col wow fadeUp" style="animation-delay:0.2s;">
           <div class="px-2 mb-4">
-            <div class="px-5">
+            <div class="px-5 px-md-0 px-lg-5 mx-5 mx-md-0">
               <img src="./images/how_to_use_02.webp" alt="" class="img-fluid" width="400" height="320">
             </div>
             <div class="fw-bold">CASE 2</div>
             <h4 class="fw-bold">施術前後の保湿に</h4>
             <div class="px-2">
-              リップ施術の１週間前からご使用になることをおすすめします。保湿により色素の定着を促進します。
+              リップ施術の１週間前からご使用になることを<br class="d-block d-md-none">おすすめします。保湿により色素の定着を促進します。
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col wow fadeUp" style="animation-delay:0.4s;">
           <div class="px-2 mb-4 text-center">
-            <div class="px-5">
+            <div class="px-5 px-md-0 px-lg-5 mx-5 mx-md-0">
               <img src="./images/how_to_use_03.webp" alt="" class="img-fluid" width="400" height="320">
             </div>
             <div class="fw-bold">CASE 3</div>
             <h4 class="fw-bold">目元の乾燥にも</h4>
             <div class="px-2">
-              乾燥が気になる時に適量を塗布します。メイクの上からでもOK
+              乾燥が気になる時に適量を塗布します。<br class="d-block d-md-none">メイクの上からでもOK
               <br>※アイライン施術後の塗布はおやめください
             </div>
           </div>
         </div>
       </div>
-      <div class="my-5 text-center">
-        <h4 class="py-5 fw-semibold fs-1" style="line-height:4rem;">
+      <div class="mt-5 mb-md-5 text-center">
+        <h4 class="pt-5 pb-lg-5 fw-semibold fs-1" style="line-height:1.5em;">
           スキンメイク施術前後の<br>パーツケアとして<br class="d-block d-md-none">お使いください。
         </h4>
       </div>
@@ -394,10 +225,10 @@
   <section class="bg-beige">
     <div class="container py-5">
       <div class="row row-cols-md-2 row-cols-1 mb-5">
-        <div class="col mb-4 px-lg-5 px-3">
-          <img src=" ./images/lid.webp" alt="" class="img-fluid" width="400" height="330">
+        <div class="col mb-4 px-lg-5 px-3 text-center">
+          <img src=" ./images/package.webp" alt="" class="img-fluid wow blur" width="400" height="379">
         </div>
-        <div class="col px-4">
+        <div class="col px-5">
           <div>
             目元、口元の気になる乾燥しやすい部分や唇の皮むけ改善、荒れ・乾燥予防などマルチにご使用頂けるマルチバームです。
 3種類のビタミン「ビタミンC（テトラヘキシルデカン酸アスコルビル）」「ビタミンA（パルミチン酸レチノール）」「ビタミンE（トコフェロール）」により潤いのある肌へと導きます。
@@ -430,8 +261,26 @@
   <section>
     <div class="container py-5 text-center">
       <div class="row row-cols-md-2 row-cols-1 mb-5 pt-5">
-        <div class="col mb-5">
-          <img src="./images/skinmake_mb.webp" alt="" class="img-fluid" width="500" height="500">
+        <div class="col mb-5 wow fadeUp">
+          <div class="swiper-container">
+            <div class="swiper-wrapper mb-2">
+                <?php for ($i = 1; $i <= 18; $i++): ?>
+                    <div class="swiper-slide">
+                        <img src="./images/slider/slider_<?php echo $i; ?>.webp" alt="Slider Image <?php echo $i; ?>" class="img-fluid">
+                    </div>
+                <?php endfor; ?>
+            </div>
+            <!-- サムネイル -->
+            <div class="swiper-thumbnail">
+                <div class="swiper-wrapper">
+                    <?php for ($i = 1; $i <= 18; $i++): ?>
+                        <div class="swiper-slide">
+                            <img src="./images/slider/slider_<?php echo $i; ?>.webp" alt="Thumbnail Image <?php echo $i; ?>" class="img-fluid">
+                        </div>
+                    <?php endfor; ?>
+                </div>
+            </div>
+          </div>
         </div>
         <div class="col d-flex align-items-center justify-content-center">
           <div>
@@ -439,9 +288,9 @@
               スキンメイク<br>マルチバーム 8g
             </h3>
             <div class="mb-5">
-              定価 3,000円（税込）
+              定価 3,300円（税込）
             </div>
-            <h4 class="fw-bold">
+            <h4 class="fw-bold lh-base">
               SKINMAKE提携<br>サロン・クリニックにて<br>販売中
             </h4>
           </div>
@@ -453,32 +302,38 @@
           サロン・クリニックの方はこちらよりご連絡ください
         </div>
         <div>
-          <a href="" class="btn btn-outline-secondary px-md-5 py-2 fw-medium fs-3" target="_blank" rel=”noopener noreferrer”><span class="px-5">glasse Ltd. 公式LINE</span></a>
+          <a href="" class="btn btn-outline-secondary px-md-5 py-2 fw-medium fs-4 wow fadeUp" target="_blank" rel=”noopener noreferrer”>
+            <span class="px-5">SKINMAKE 公式LINE</span>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <footer class="pt-5 pb-3 text-center bg-beige text-center">
-    <div class="py-5 mb-5">
-      <a href="./">
-        <img src="./images/skinmake_logo.svg" alt="" class="footer-logo">
-      </a>
-    </div>
-    <div class="d-flex justify-content-center">
-      <div class="mx-3">
-        <a href="" class="footer-link">会社概要</a>
-      </div>
-      <div class="mx-3">
-        <a href="" class="footer-link">プライバシーポリシー</a>
-      </div>
-    </div>
-    <div>&copy; <?= $year ?> MULTI BALM</div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
-    new WOW().init();
+    var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 10,
+        slidesPerView: 1,
+        thumbs: {
+            swiper: {
+                el: '.swiper-thumbnail',
+                slidesPerView: 6,
+                watchSlidesVisibility: true,
+                watchSlidesProgress: true
+            }
+        },
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false
+        }
+    });
   </script>
+
+
+<?php
+require_once('foot.php');
+?>
 </body>
 </html>
