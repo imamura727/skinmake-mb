@@ -49,8 +49,8 @@ require_once('head.php');
             <img src="./images/argane.webp" alt="" class="img-fluid img-vitamin wow blur" width="500" height="509">
           </div>
         </div>
-        <div class="col wow fadeUp px-md-5 px-3 d-flex align-items-center justify-content-start order-1">
-          <div class="pb-5">
+        <div class="col wow fadeUp px-md-5 px-4 d-flex align-items-center justify-content-start order-1">
+          <div class="pb-5 pe-md-5 me-xl-5">
             <h3 class="fs-2 fw-semibold mb-md-5 mb-3">
               アルガンオイル<br>（アルガニアスピノサ核油）
             </h3>
@@ -60,8 +60,8 @@ require_once('head.php');
           </div>
         </div>
 
-        <div class="col wow fadeUp order-3 order-md-2 px-md-5 px-3 d-flex align-items-center justify-content-end">
-          <div class="pb-5">
+        <div class="col wow fadeUp order-3 order-md-2 px-md-5 px-4 d-flex align-items-center justify-content-end">
+          <div class="pb-5 ps-md-5 ms-xl-5">
             <h3 class="fs-2 fw-semibold mb-md-5 mb-3">
               ビタミンE<br>（トフェコロール）
             </h3>
@@ -81,8 +81,8 @@ require_once('head.php');
             <img src="./images/vitamin_a.webp" alt="" class="img-fluid img-vitamin wow blur" width="500" height="502">
           </div>
         </div>
-        <div class="col wow fadeUp order-5 px-md-5 px-3 d-flex align-items-center justify-content-start">
-          <div class="pb-5">
+        <div class="col wow fadeUp order-5 px-md-5 px-4 d-flex align-items-center justify-content-start">
+          <div class="pb-5 pe-md-5 me-xl-5">
             <h3 class="fs-2 fw-semibold mb-md-5 mb-3">
               ビタミンA<br>（パルミチン酸レチノール）
             </h3>
@@ -302,13 +302,127 @@ require_once('head.php');
           サロン・クリニックの方はこちらよりご連絡ください
         </div>
         <div>
-          <a href="" class="btn btn-outline-secondary px-md-5 py-2 fw-medium fs-4 wow fadeUp" target="_blank" rel=”noopener noreferrer”>
+          <a href="https://line.me/R/ti/p/@404fkzzp" class="btn btn-outline-secondary px-md-5 py-2 fw-medium fs-4 wow fadeUp" target="_blank" rel=”noopener noreferrer”>
             <span class="px-5">SKINMAKE 公式LINE</span>
           </a>
         </div>
       </div>
     </div>
   </section>
+<section class="bg-beige">
+        <div class="container pt-md-5 pb-md-5">
+          <div class="text-center mb-4">
+            <h4 class="fadeInUp wow mb-2 pt-5 pb-4 wow fadeUp user-voice">導入されたみなさまからのメッセージ</h4>
+          </div>
+            <!-- Swiper Container -->
+            <div class="swiper-container-voice mb-4">
+                <div class="swiper-wrapper pb-4">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide p-3">
+                        <div class="wow fadeInRight">
+                            <div class="px-4 p-md-4 d-flex flex-column">
+                            <div class="pb-3 d-flex align-items-center">
+                              <img src="./images/icons/icons_1.webp" alt="voice-1" class="voice-icon me-3">
+                              <h6 class="pt-2">サロン A様</h6>
+                            </div>
+                            <div class="voice-box">
+                                アフターケアはずっとワセリンを使用していましたが、こちらのバームめちゃくちゃいいです❤️
+                                <br>お客様からも大好評です😭❤️
+                                <br>ありがとうございます
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide p-3">
+                        <div class="wow fadeInRight">
+                          <div class="px-4 p-md-4 d-flex flex-column">
+                            <div class="pb-3 d-flex align-items-center">
+                              <img src="./images/icons/icons_2.webp" alt="voice-2" class="voice-icon me-3">
+                              <h6 class="pt-2">クリニック B様</h6>
+                            </div>
+                            <div class="voice-box">
+                                施術が終わってお客様に渡せるような保湿剤を探していました。
+                                <br>箱が高級感があって、すごくいいです。
+                                <br>使用感も、ベタつかず理想の感じでした。
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide p-3">
+                        <div class="wow fadeInRight">
+                          <div class="px-4 p-md-4 d-flex flex-column">
+                            <div class="pb-3 d-flex align-items-center">
+                              <img src="./images/icons/icons_3.webp" alt="voice-3" class="voice-icon me-3">
+                              <h6 class="pt-2">サロン C様</h6>
+                            </div>
+                            <div class="voice-box">
+                                ピカピカしすぎない仕上がりがよかったです。
+                                <br>唇が乾燥しやすいので自分のケアにも使っていますが、無味無臭で本当いいです。
+                                <br>リピ確定です！
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide p-3">
+                      <div class="wow fadeInRight">
+                          <div class="px-4 p-md-4 d-flex flex-column">
+                            <div class="pb-3 d-flex align-items-center">
+                              <img src="./images/icons/icons_4.webp" alt="voice-4" class="voice-icon me-3">
+                              <h6 class="pt-2">サロン D様</h6>
+                            </div>
+                            <div class="voice-box">
+                                初回のお客様にプレゼントにしています。
+                                <br>うちは施術の金額が安くないので、高級感があってすごく喜ばれました！
+                                <br>使い心地も安っぽくないので、満足しています。販売の方も買いやすい金額だからか
+                                <br>結構買っていかれます。
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="swiper-slide p-3">
+                        <div class="wow fadeInRight">
+                          <div class="px-4 p-md-4 d-flex flex-column">
+                            <div class="pb-3 d-flex align-items-center">
+                              <img src="./images/icons/icons_5.webp" alt="voice-5" class="voice-icon me-3">
+                              <h6 class="pt-2">クリニック E様</h6>
+                            </div>
+                            <div class="voice-box">
+                                韓国で見つけたものを使用していましたが、香りがついていて好き嫌いがあったので
+                                <br>何かないか探していた時に、こちらをインスタで見つけました。探していたものはまさにこれって感じで
+                                <br>値段も手頃でよかったです。
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- Slide 6 -->
+                    <div class="swiper-slide p-3">
+                        <div class="wow fadeInRight">
+                          <div class="px-4 p-md-4 d-flex flex-column">
+                            <div class="pb-3 d-flex align-items-center">
+                              <img src="./images/icons/icons_6.webp" alt="voice-6" class="voice-icon me-3">
+                              <h6 class="pt-2">サロン F様</h6>
+                            </div>
+                            <div class="voice-box">
+                              眉にもリップにも使えるのがいい！
+                              <br>アートメイクの後の唇が乾燥しやすいので、アフターケアにおすすめしています。
+                              <br>チューブタイプがあったら嬉しいな❤️
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Navigation -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
 
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -331,6 +445,33 @@ require_once('head.php');
     });
   </script>
 
+<script>
+        const swiperVoice = new Swiper('.swiper-container-voice', {
+            slidesPerView: 1,
+            breakpoints: {
+                // 768px以上の場合
+                768: {
+                slidesPerView: 2
+                },
+                991: {
+                slidesPerView: 3
+                }
+            },
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
 
 <?php
 require_once('foot.php');

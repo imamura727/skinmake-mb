@@ -1,4 +1,4 @@
-  <footer class="pt-5 pb-3 text-center bg-beige text-center">
+  <footer class="pt-5 pb-3 text-center text-center">
     <div class="py-5 mb-5">
       <a href="./">
         <img src="./images/skinmake_logo.svg" alt="" class="footer-logo">

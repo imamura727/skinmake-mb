@@ -226,4 +226,92 @@
     aspect-ratio: 1 / 1; /* 縦横比を1:1に設定 */
     object-fit: cover; /* サムネイルの画像を領域に覆うように表示 */
 }
+
+/* ユーザーの声 */
+.voice-icon {
+    width: 50px !important; /* 画像の幅を設定 */
+    height: 50px !important; /* 画像の高さを設定 */
+    border-radius: 50%; /* 画像を丸くする */
+    object-fit: cover !important; /* 画像を枠にフィットさせる */
+    overflow: hidden;
+}
+.voice-box {
+    position: relative; /* 吹き出しの尻尾を配置するために必要 */
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.voice-box::before {
+    content: '';
+    position: absolute;
+    top: -10px; /* 吹き出しの尻尾を上部に配置 */
+    left: 18px; /* 左端から10pxの位置に配置 */
+    border-width: 0 7px 10px 7px; /* 三角形のサイズを設定 */
+    border-style: solid;
+    border-color: transparent transparent white transparent; /* 吹き出しの尻尾の色を設定 */
+}
+.swiper-container-voice {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  letter-spacing: 0;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10; /* 他の要素より前面に表示 */
+  width: 10px !important; /* 横幅を小さくする */
+  height: 10px !important; /* 高さを小さくする */
+  color: #BCACACFF !important; /* アイコンの色を白に変更 */
+}
+
+.user-voice {
+  position: relative;
+  display: inline-block;
+  margin-bottom: .8rem;
+}
+.user-voice:before {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  display: inline-block;
+  width: 60px;
+  height: 5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #BCACACFF;
+  border-radius: 2px;
+}
+
+
+/* アイコンのサイズを調整する */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 1.5rem !important; /* アイコンのサイズを小さくする */
+}
+
+/* ホバー時のエフェクト */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #f0f0f0; /* アイコンの色を薄い灰色に変更 */
+}
+
+/* ボタンの位置を調整（オプション） */
+.swiper-button-next {
+  right: 10px; /* 右端からの距離 */
+}
+
+.swiper-button-prev {
+  left: 10px; /* 左端からの距離 */
+}
+
+.swiper-pagination-bullet {
+  background-color: #BCACACFF !important;
+}
 </style>
